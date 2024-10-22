@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halloween tocht</title>
+
+    <style>
+        /* Outer table border only */
+        table {
+            border-collapse: separate; /* Prevent collapsing of cell borders */
+            border: 2px solid black;    /* Outer table border */
+            width: 100%;                /* Adjust width as needed */
+        }
+
+        /* Remove borders from individual cells */
+        td {
+            border: none;      /* No borders on cells */
+            padding: 10px;     /* Add padding inside cells */
+        }
+
+        /* Optional: Control image size */
+        img {
+            width: 100%;       /* Make image fit the cell */
+            height: auto;      /* Keep aspect ratio */
+        }
+    </style>
+    
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td rowspan="4" height="150px" width="150px"><img src="pumpkin.jpg" height="150px" width="150px"></td>
+            <td><input type="text" value="Name"></td>
+            <td><input type="text" value="Firstname"></td>
+
+        </tr>
+
+        <tr>
+            <td><input type="email" value="email"></td>
+            <td><input type="text" value="phone number"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" value="amount" min="1">
+            </td>
+            <td>
+                <input type="radio" name="20">20:00 - kids
+                <input type="radio" name="20">21:00 - horror
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" colspan="2">
+                <input type="checkbox">Soup
+                <input type="checkbox">Broodje
+                <input type="checkbox">Jenever
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox">algemene voorwaarden</td>
+
+        </tr>
+
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et atque suscipit laborum.</td>
+            <td></td>
+            <td><input type="button" value="submit"></td>
+
+        </tr>
+
+
+
+
+    </table>
+</body>

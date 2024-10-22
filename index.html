@@ -1,0 +1,177 @@
+<html>
+<!-- This is a comment -->
+
+<head>
+    <meta charset="UTF-8">
+        <title>HTML Page</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            td {
+                border-color: black;
+                border-width: 1px;
+                border-style: dashed;
+                padding: 5px;
+            }
+ 
+            .navigation {
+                position: sticky;
+                top: 0;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- a sticky navigation bar to jump to different sections -->
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#input">Input</a>
+        <a href="#select">Select</a>
+
+    </div>
+    <div>
+        <h1 id="Home">Hi there, let's HTML.</h1>
+        <!-- block -->
+        <p>Hello</p>
+        <p>World</p>
+
+        <!-- make a horizontal rule -->
+        <hr>
+
+        <!-- inline -->
+        <span>Hello</span>
+        <span>World</span>
+
+        <!-- basic markup and styling -->
+        <!-- expand the text by using shortkey option-Z -->
+        <p> <b>Lorem</b> <i>ipsum</i> <strong>dolor</strong><u></u>,  amet consectetur adipisicing elit. Sunt quod maiores voluptatibus expedita exercitationem non consequatur cupiditate rerum perferendis iusto. Debitis, adipisci molestiae. Reprehenderit blanditiis assumenda nostrum libero non vel?</p>
+
+        <!-- Links, always use target="_blank" to open in a new tab - aka external links -->
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="https://syntrapxl.be">SyntraPXL</a>
+        <a href="index.html">Home</a>
+
+        <!-- images local and external -->
+         <!-- local: the file sits in the same folder -->
+        <img src="same.jpeg" alt="placeholder">
+
+        <!-- the file is in a different folder -->
+        <img src="images/different.jpeg" alt="placeholder">
+
+         <!-- external: the file is in a different folder -->
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+        
+
+        <!-- ordered and unordered list... -->
+         <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+         </ol>
+
+         <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+         </ul>
+
+         <!-- make a table -->
+        <table>
+            <tr>
+                <th1>Column 1</th1>
+                <th1>Column 2</th1>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+        </table>  
+        
+        <!-- merging tables -->
+
+        <table>
+            <tr>
+                <th1 colspan="2">Name</th1>
+                <!-- <th1>Colum 2</th1> > we remove this one due to the colspan of colum 1 -->
+                <th1>Column 3</th1>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td>Item 5</td>
+                <td>Item 6</td>
+            </tr>
+            <tr>
+                <td>Item 7</td>
+                <td>Item 8</td>
+                <td rowspan="2">Item 9</td>
+            </tr>
+            <tr>
+                <td>Item 10</td>
+                <td>Item 11</td>
+                <!-- <td>Item 12</td> > we remove this one due to the rowspan of Item 9 -->
+            </tr>
+            <tr>
+                <td>Item 13</td>
+                <td>Item 14</td>
+                <td>Item 15</td>
+            </tr>
+        </table>
+
+        <!-- formulieren -->
+        <h2 id="input">Input Types</h2>
+        <!-- values of the inputs are optional and can be left blank -->
+        <input type="text" value="Hello World"><hr>
+        <input type="password" value="Hello World"><hr>
+        <input type="email" value="mas@mas.com"><hr>
+        <input type="file"><hr>
+        <!-- Choose input type number with steps and min and max value -->
+        <input type="number" min="1" max="10" step="2"><hr>
+        <input type="range"><hr>
+        <input type="date"><hr>
+        <input type="datetime-local"><hr>
+        <input type="month"><hr>
+        
+        <h3>Radio and Checkbox</h3>
+        <!-- Radio is one of the other(s) -->
+        <input type="radio" name="package"> Pickup
+        <input type="radio" name="package"> Delivery
+        <input type="radio" name="package"> Drone
+        <hr>
+        <!-- check is multiple -->
+        <input type="checkbox" name="toppings"> Mayonaise
+        <input type="checkbox" name="toppings"> Yoppie
+        <input type="checkbox" name="toppings"> Ketchup
+        <hr>
+        <h4 id="select">Select</h4>
+        <select>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <hr>
+        <h5>Text area</h5>
+        <textarea>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi quia laudantium vitae, sit aliquid earum incidunt minus dignissimos sapiente.
+        </textarea>
+        
+        <hr>
+
+        <h6>Others</h6>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </div>
+
+    <script>src="index.js"</script>
+</body>
+
+</html>

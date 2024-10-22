@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Support Card</title>
+
+
+    <style>
+        table {
+            border: 2px solid black;
+            /* Outer border */
+            border-spacing: 0;
+            /* No spacing between cells */
+            width: 100%;
+            /* Adjust width as needed */
+        }
+
+        /* Remove borders from individual cells */
+        td,
+        th {
+            border: none;
+            /* No borders around the cells */
+            padding: 10px;
+            /* Adds space inside cells */
+        }
+
+        /* Style for the inner table in the notes area */
+        table.inner {
+            border: 1px solid black;
+            /* Add border to the inner table only */
+            width: 100%;
+            /* Make inner table full width */
+            border-collapse: collapse;
+            /* Neat cell borders in inner table */
+        }
+
+        table.inner td {
+            border: 1px solid black;
+            /* Borders between the inner table cells */
+            text-align: center;
+            /* Center text in the inner table */
+        }
+
+        /* Optional: Control image size */
+        img {
+            max-width: 100%;
+            /* Ensures the image scales properly */
+            height: auto;
+            /* Maintains aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Date:<input type="datetime-local"></td>
+            <td><u>To be filled up by TSG personnel</u></td>
+        </tr>
+        <tr>
+            <td>reference No:<input type="number"></td>
+            <td>Received By:<u><input type="text"></u></td>
+        </tr>
+        <tr>
+            <td>Employee Name:<u><input type="text"></u></td>
+            <td>Date:<input type="datetime-local"></td>
+        </tr>
+        <tr>
+            <td>Employee No.:<u><input type="text"></u></td>
+            <td>Computer Name:<u><input type="text"></u></td>
+        </tr>
+        <tr>
+            <td>Contact No.:<u><input type="text"></u></td>
+            <td>Assigned To:<u><input type="text"></u></td>
+        </tr>
+        <tr>
+            <td>Issue Description:</td>
+            <td>Date:<input type="datetime-local"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><input type="text"></td>
+            <td>IP Address (optional):<u><input type="text"></u></td>
+        </tr>
+        <tr>
+            <td>Item Pulled Out?
+                <input type="checkbox">yes
+                <input type="checkbox">no
+            </td>
+        </tr>
+        <tr>
+            <td>Location:<input type="text"></td>
+            <td>Items:<input type="text"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><input type="button" value="SAVE"></td>
+            <td>Status:<input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="SAVE"></td>
+        </tr>
+
+        <!-- Add this row with a colspan to create a line above the 'NOTES AREA' -->
+
+        <tr>
+            <td colspan="2" style="border-bottom: 2px solid black;"></td>
+        </tr>
+
+        <tr>
+            <td>(NOTES AREA)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="ADD"><input type="button" value="UNDO"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <!-- Inner table with a border -->
+                <table class="inner">
+                    <tr>
+                        <td style="width: 20%; text-align: center;">Date/time Added</td>
+                        <td style="width: 80%; text-align: center;">Description</td>
+                    </tr>
+                    <tr>
+                        <td><input type="datetime-local"></td>
+
+                        <td>"The computer issue has not been resolved yet. The monitor screen is still blue."</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

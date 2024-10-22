@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halloween tocht</title>
+
+    <style>
+        /* General table styling */
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        /* Image styling */
+        img {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Cell padding for neat alignment */
+        td {
+            padding: 8px;
+        }
+
+        /* Align text inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 95%;
+            padding: 5px;
+        }
+
+        /* Align radio buttons */
+        input[type="radio"] {
+            margin-left: 5px;
+        }
+
+        /* Align checkbox inputs */
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Button styling */
+        input[type="button"] {
+            padding: 5px 10px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        /* Align content vertically */
+        .vertical-align {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- Row 1: Image and Name/Firstname fields -->
+        <tr>
+            <td rowspan="5" class="vertical-align">
+                <img src="pumpkin.jpg" alt="Pumpkin Image">
+            </td>
+            <td><input type="text" value="Name"></td>
+            <td><input type="text" value="Firstname"></td>
+        </tr>
+
+        <!-- Row 2: Email and Phone number -->
+        <tr>
+            <td><input type="email" value="email"></td>
+            <td><input type="text" value="phone number"></td>
+        </tr>
+
+        <!-- Row 3: Amount and Radio buttons -->
+        <tr>
+            <td><input type="text" value="amount" min="1"></td>
+            <td>
+                <input type="radio" name="time" value="kids"> 20:00 - kids
+                <input type="radio" name="time" value="horror"> 21:00 - horror
+            </td>
+        </tr>
+
+        <!-- Row 4: Checkbox options -->
+        <tr>
+            <td colspan="2">
+                <input type="checkbox"> Soup
+                <input type="checkbox"> Broodje
+                <input type="checkbox"> Jenever
+            </td>
+        </tr>
+
+        <!-- Row 5: Terms and conditions -->
+        <tr>
+            <td colspan="2">
+                <input type="checkbox"> Algemene voorwaarden
+            </td>
+        </tr>
+
+        <!-- Row 6: Description text and Submit button -->
+        <tr>
+            <td colspan="2" class="vertical-align">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et atque suscipit laborum.</td>
+            <td><input type="button" value="submit"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
